@@ -3,14 +3,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ThemeToggle } from "./theme-toggle";
+import { GithubIcon } from "./icons";
 import {
   Sparkles,
   Menu,
   X,
-  Github,
   ArrowRight,
   Search,
-  Layers,
   ChevronRight,
 } from "lucide-react";
 
@@ -99,7 +98,7 @@ export function Navbar() {
               className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 rounded-lg bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors shadow-xs"
               title="View on GitHub"
             >
-              <Github className="w-3.5 h-3.5" />
+              <GithubIcon className="w-3.5 h-3.5" />
               <span className="hidden xl:inline">Star on GitHub</span>
               <span className="text-[10px] font-semibold text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-1 rounded ml-0.5">
                 ★ 2.4k
@@ -162,7 +161,7 @@ export function Navbar() {
               rel="noreferrer"
               className="flex items-center justify-center gap-2 w-full py-2.5 text-sm font-medium text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 rounded-lg bg-slate-50 dark:bg-slate-900"
             >
-              <Github className="w-4 h-4" />
+              <GithubIcon className="w-4 h-4" />
               <span>Star on GitHub (2.4k)</span>
             </a>
 
